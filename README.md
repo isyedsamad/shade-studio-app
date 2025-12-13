@@ -34,7 +34,6 @@ Each gradient ships with:
 
 - CSS code
 - Tailwind utility class
-- `isDark` theme flag
 - Clean preview panel
 
 ### 🌫️ **2. Background Generators**
