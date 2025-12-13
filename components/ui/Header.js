@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <>
-        <div className='flex justify-between items-center px-15 py-5'>
+        <div className='flex flex-col sm:flex-row gap-4 justify-between items-center px-15 py-5'>
             <div>
                 <h1 className='font-semibold'>shade.studio</h1>
             </div>

@@ -44,7 +44,7 @@ export default function Home() {
           className="text-[var(--text-primary)]">
         <Header />
         <Hero />
-        <div className="mx-auto flex flex-wrap justify-center items-center gap-5 py-5">
+        <div className="mx-auto flex flex-wrap justify-center items-center gap-5 py-5 px-5">
           {isLoading ? 
             'Loading data...'
             :
