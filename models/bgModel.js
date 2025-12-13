@@ -20,6 +20,10 @@ const bgSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    isDark: {
+        type: Boolean,
+        required: true,
+    },
     downloads: {
         type: Number,
         default: 0

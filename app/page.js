@@ -1,5 +1,6 @@
 'use client'
 import Card from "@/components/ui/Card";
+import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
 import { useBg } from "@/context/BgContext";
@@ -55,6 +56,7 @@ export default function Home() {
             'No Item Found!'
           }
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -2,10 +2,15 @@ import { useBg } from '@/context/BgContext';
 import React from 'react'
 
 const Card = (props) => {
-    const { setBg } = useBg();
+    const { setBg, setThemeLight, setThemeDark } = useBg();
     const handleApply = () => {
         const raw = props.data.style_code;
         setBg(raw); // store in context
+        if(props.data.isDark) {
+            setThemeDark();
+        }else {
+            setThemeLight();
+        }
     };
     function cssStringToObject(cssString) {
         return cssString.split(";").reduce((acc, style) => {
@@ -33,7 +38,7 @@ const Card = (props) => {
             </div>
             <div className='flex duration-300
                 opacity-100 visible group-hover:opacity-100 group-hover:visible
-                justify-start items-start flex-col px-4 py-3 bg-white/60 m-3 rounded-md'>
+                justify-start items-start flex-col px-4 py-3 bg-[var(--bg-primary)]/60 m-3 rounded-md'>
                 <h3 className='font-semibold text-[var(--text-primary)] text-sm'>{props.data.title}</h3>
                 <p className='font-medium text-[var(--text-secondary)] text-xs'>{props.data.description}</p>
             </div>
