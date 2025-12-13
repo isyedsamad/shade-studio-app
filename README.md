@@ -125,7 +125,6 @@ You can help by:
 
 Inspired by:
 
-- **Ibelick**
 - **Aceternity UI**
 - **MagicUI**
 - **shadcn/ui**
