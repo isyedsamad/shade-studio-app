@@ -8,7 +8,15 @@ const bgSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    code: {
+    style_code: {
+        type: String,
+        required: true,
+    },
+    tailwind_code: {
+        type: String,
+        required: true,
+    },
+    category: {
         type: String,
         required: true,
     },
@@ -17,5 +25,5 @@ const bgSchema = new mongoose.Schema({
         default: 0
     }
 })
-const bgModel = mongoose.models.bgdesign || mongoose.model('bgdesign', bgSchema);
+const bgModel = mongoose.models.bg_design || mongoose.model('bg_design', bgSchema);
 export default bgModel;

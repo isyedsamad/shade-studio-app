@@ -10,12 +10,11 @@ export async function GET(request) {
 }
 export async function POST(request) {
     try {
-        // const formData = await request.formData;
-        const { title, description, code } = await request.json();
+        const { title, description, style_code, tailwind_code, category } = await request.json();
         const bgData = {
             title,
             description,
-            code,
+            style_code, tailwind_code, category
         }
         const savedData = await bgModel.create(bgData);
         return NextResponse.json({success: true, message: 'Data Saved to database', data: savedData})

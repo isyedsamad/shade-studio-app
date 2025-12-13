@@ -12,9 +12,9 @@
   --text-primary: #FAF9F5; */
 }
 
-body {
+/* body {
   background: var(--bg-primary);
-}
+} */
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;

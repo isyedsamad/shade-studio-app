@@ -1,24 +1,41 @@
+import { useBg } from '@/context/BgContext';
 import React from 'react'
 
 const Card = (props) => {
+    const { setBg } = useBg();
+    const handleApply = () => {
+        const raw = props.data.style_code;
+        setBg(raw); // store in context
+    };
+    function cssStringToObject(cssString) {
+        return cssString.split(";").reduce((acc, style) => {
+            const [key, value] = style.split(":");
+            if (!key || !value) return acc;
+            const camelKey = key.trim().replace(/-([a-z])/g, g => g[1].toUpperCase());
+            acc[camelKey] = value.trim();
+            return acc;
+        }, {});
+    }
   return (
-    <div className='bg-transparent rounded-sm shadow-md w-70 h-60'>
-        <div className='group w-full h-full rounded-md bg-red-300 flex justify-between flex-col'>
+    <div className="rounded-sm shadow-md w-70 h-60">
+        {/* <div className={`group w-full h-full rounded-md flex justify-between flex-col ${props.data.code}`}> */}
+        <div className="group w-full h-full rounded-md flex justify-between flex-col"
+            style={ cssStringToObject(props.data.style_code) }>
             <div className='m-3 flex justify-start items-center gap-1 opacity-100 visible group-hover:opacity-100 group-hover:visible'>
                 <div className='flex duration-300 cursor-pointer
-                    px-2 py-1 bg-black/60 rounded-md'>
-                    <h3 className='font-semibold text-white text-xs'>Preview</h3>
+                    px-2 py-1 bg-black/50 rounded-md'>
+                    <h3 className='font-medium text-white text-xs' onClick={handleApply}>preview</h3>
                 </div>
                 <div className='flex duration-300 cursor-pointer
-                    px-2 py-1 bg-black/60 rounded-md'>
-                    <h3 className='font-semibold text-white text-xs'>Copy Code</h3>
+                    px-2 py-1 bg-black/50 rounded-md'>
+                    <h3 className='font-medium text-white text-xs'>copy code</h3>
                 </div>
             </div>
             <div className='flex duration-300
                 opacity-100 visible group-hover:opacity-100 group-hover:visible
                 justify-start items-start flex-col px-4 py-3 bg-white/60 m-3 rounded-md'>
                 <h3 className='font-semibold text-[var(--text-primary)] text-sm'>{props.data.title}</h3>
-                <p className='font-medium text-[var(--text-secondary)] text-xs'>this is a basic background for div designed for neon effect in a div.</p>
+                <p className='font-medium text-[var(--text-secondary)] text-xs'>{props.data.description}</p>
             </div>
         </div>
     </div>
