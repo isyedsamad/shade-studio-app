@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <div style={{
-            ...cssStringToObject(bg || "background: var(--bg-primary);"),
+            ...cssStringToObject(bg.replace("background:", "backgroundImage:") || "backgroundImage: var(--bg-primary);"),
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

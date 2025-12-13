@@ -5,7 +5,7 @@ export function BgProvider({ children }) {
   const [bg, setBg] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
   const setThemeLight = () => {
-    document.documentElement.style.setProperty("--bg-primary", "#ffffff");
+    document.documentElement.style.setProperty("--bg-primary", "linear-gradient(to right bottom, rgb(245, 245, 245), rgb(225, 225, 225));");
     document.documentElement.style.setProperty("--text-primary", "#141413");
     document.documentElement.style.setProperty("--text-secondary", "#343d4a");
   }

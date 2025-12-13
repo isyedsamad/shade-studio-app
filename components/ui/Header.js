@@ -15,7 +15,7 @@ const Header = () => {
               {isDarkMode ? (
                 <SunMedium className='cursor-pointer' onClick={() => {
                   setIsDarkMode(false);
-                  setBg("background: white;")
+                  setBg("background: linear-gradient(to right bottom, rgb(245, 245, 245), rgb(225, 225, 225));")
                 }} />
               ) : (
                 <Moon className='cursor-pointer' onClick={() => {

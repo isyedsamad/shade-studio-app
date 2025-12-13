@@ -5,7 +5,7 @@
 }
 
 :root {
-  --bg-primary: #ffffff;
+  --bg-primary: linear-gradient(to right bottom, rgb(245, 245, 245), rgb(225, 225, 225));
   --text-primary: #141413;
   --text-secondary: #9f9f9f;
   /* --bg-primary: #141413;
