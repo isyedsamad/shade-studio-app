@@ -2,14 +2,14 @@ import { useBg } from '@/context/BgContext';
 import React from 'react'
 
 const Card = (props) => {
-    const { setBg, setThemeLight, setThemeDark } = useBg();
+    const { setBg, setIsDarkMode } = useBg();
     const handleApply = () => {
         const raw = props.data.style_code;
         setBg(raw); // store in context
         if(props.data.isDark) {
-            setThemeDark();
+            setIsDarkMode(true);
         }else {
-            setThemeLight();
+            setIsDarkMode(false);
         }
     };
     function cssStringToObject(cssString) {
