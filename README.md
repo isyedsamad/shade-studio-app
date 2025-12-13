@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  
+# 🌈 **shade.studio**
 
-## Getting Started
+### Beautiful gradients, backgrounds & UI shades — crafted for modern designers.
 
-First, run the development server:
+🚀 **Live Demo:** https://shadestudio.vercel.app  
+🎨 Design Faster. Ship Prettier.
+
+---
+
+![Banner](https://dummyimage.com/1200x300/111/fff&text=shade.studio)
+
+</div>
+
+---
+
+## ✨ What is shade.studio?
+
+**shade.studio** is a premium design utility website offering a curated library of  
+**gradients**, **patterns**, **glass backgrounds**, **dark-mode textures**,  
+and **Tailwind-ready styles**.
+
+If you love clean UI, smooth gradients, and premium web aesthetics —  
+this is your new home.
+
+---
+
+## 🚀 Features
+
+### 🎨 **1. Curated Gradient Library**
+
+Each gradient ships with:
+
+- CSS code
+- Tailwind utility class
+- `isDark` theme flag
+- Clean preview panel
+
+### 🌫️ **2. Background Generators**
+
+Create:
+
+- Glass / Frosted backgrounds
+- Glow effects
+- Subtle textures
+- Premium linear blends
+
+### 🌗 **3. Theme Ready**
+
+Every shade works with light and dark themes out of the box.
+
+### ⚡ **4. One-Click Copy**
+
+Copy **CSS**, **Tailwind**, or **Raw Style Objects** instantly.
+
+### 🧩 **5. Minimal & Beautiful UI**
+
+built for production-ready design workflows.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology        | Purpose                |
+| ----------------- | ---------------------- |
+| **Next.js 15**    | App framework          |
+| **React**         | Component architecture |
+| **Tailwind CSS**  | Styling                |
+| **Framer Motion** | Subtle animations      |
+| **TypeScript**    | Strict typing          |
+| **Vercel**        | Hosting                |
+
+---
+
+## 📁 Folder Structure
+
+shade.studio/
+│
+├── app/
+│ ├── page.js → Homepage
+│ ├── api/ → Future endpoints
+│ └── components/ → Reusable UI components
+│
+├── lib/
+│ └── gradients.js → Gradient dataset
+│
+├── public/ → Static files
+└── tailwind.config.js → Tailwind setup
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/your-repo/shade.studio.git
+cd shade.studio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🤝 Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+PRs are welcome!  
+You can help by:
 
-## Learn More
+- Adding new gradient sets
+- Improving animations
+- Enhancing UI responsiveness
+- Building a mesh-gradient editor
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🔥 Mesh Gradient Generator
+- ✨ AI Shade Creator
+- 🗂️ User Collections
+- 🎛️ Custom Gradient Editor
+- 📁 Export PNG/SVG options
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ❤️ Credits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Inspired by:
+
+- **Ibelick**
+- **Aceternity UI**
+- **MagicUI**
+- **shadcn/ui**
+
+Built for developers who want to ship beautiful UIs — faster.
+
+---
+
+## 📜 License
+
+MIT License — Free to use, modify & distribute.
+
+---
+
+<div align="center">
+
+## ⭐ Support
+
+If you like **shade.studio**, consider giving the repo a **star** ⭐  
+Made with ❤️ to make the web more beautiful.
+
+</div>
