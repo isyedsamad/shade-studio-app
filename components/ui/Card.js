@@ -38,7 +38,7 @@ const Card = (props) => {
             </div>
             <div className={`flex duration-300
                 opacity-100 visible group-hover:opacity-100 group-hover:visible
-                justify-start items-start flex-col px-4 py-3 ${props.data.isDark ? 'bg-black/60' : isDarkMode ? 'bg-black/60' : 'bg-[var(--bg-primary)]/60'} m-3 rounded-lg`}>
+                justify-start items-start flex-col px-4 py-3 ${props.data.isDark ? 'bg-black/60' : isDarkMode ? 'bg-black/60' : 'bg-white/60'} m-3 rounded-lg`}>
                 <h3 className={`font-semibold ${props.data.isDark ? 'text-white' : 'text-[var(--text-primary)]'} text-sm`}>{props.data.title}</h3>
                 <p className={`font-medium ${props.data.isDark ? 'text-gray-200' : 'text-[var(--text-secondary)]'} text-xs`}>{props.data.description}</p>
             </div>
